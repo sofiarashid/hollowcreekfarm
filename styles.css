@@ -1,0 +1,18 @@
+/* navbar
+.nav-link {
+    color: black;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: #70110a;
+    font-weight: bolder;
+}
+
+.navbarimg {
+    max-height: 50px;
+    width: auto;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
