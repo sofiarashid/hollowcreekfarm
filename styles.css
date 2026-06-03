@@ -1,18 +1,83 @@
-/* navbar
-.nav-link {
-    color: black;
-    font-size: 20px;
+/*navbar*/
+.navbar {
+    background: #1F3F1E;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.2rem;
 }
 
-.nav-link:hover {
-    color: #70110a;
-    font-weight: bolder;
+.navbar .container-fluid {
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-around;
 }
 
 .navbarimg {
-    max-height: 50px;
-    width: auto;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    width: 72px;
+    max-width: 9%;
+    height: auto;
+    border-radius: 100%;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+}
+
+.nav-link.active {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.navbar-toggler {
+    border: 2px solid #fff !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/*end of navbar*/
+
+/*home page*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*end of home page*/
+
+
+
+
+
+/*about page*/
+.about-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    column-gap: 20px;
+    padding: 20px;
+
 }
