@@ -54,11 +54,75 @@
 /*end of navbar*/
 
 /*home page*/
-
-
-
-
-
+body.indexhtmlbody {
+    position: relative;
+    background-image: url("Client Files/Hero Imgs/hero-apple-orchard-creek-picnic-tables.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.homepagebox {
+/* make it centered and styled */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #D9AE5E80;
+    border: 10px solid #1F3F1E;
+    border-radius: 45px;
+    padding: 5rem 3rem;
+    width: min(95%, 880px);
+    min-height: 620px;
+/* text centered and styled */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    text-align: center;
+    color: #1F3F1E;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.7rem;
+}
+.title {
+    font-size: 250%;
+    font-weight: 400;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+}
+.subtitle {
+    font-weight: 300;
+}
+.planurvisitbtn {
+    background-color: #D9AE5E;
+    border: 3px solid #912818;
+    border-radius: 1.5rem;
+    color: #1F3F1E !important;
+    padding: 1.4rem 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: min(100%, 420px);
+    max-width: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    margin-top: 2rem;
+}
+.planurvisitbtn:hover,
+.planurvisitbtn:focus {
+    background-color: #C79E45;
+    border: 3px solid #912818;
+    color: #1F3F1E !important;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(31, 63, 30, 0.18);
+    text-decoration: none;
+}
+.planurvisitbtn:active {
+    transform: translateY(0);
+    box-shadow: 0 8px 16px rgba(31, 63, 30, 0.16);
+}
 
 
 
@@ -79,5 +143,49 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     column-gap: 20px;
     padding: 20px;
+/* make it centered and styled */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.aboutus{
+    width: 75%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+}
 
+
+.aboutTheFarm {
+    color: #1F3F1E;
+    font-family: "Playfair Display", serif;
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+body.aboutusbody {
+    background-image: url("Client Files/Website Background Patterns/ChatGPT Image Apr 29, 2026, 10_30_56 PM (5).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 1px;
+    padding: 2rem 0;
+}
+.aboutTheFarm {
+    text-decoration: underline;
 }
