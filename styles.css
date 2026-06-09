@@ -7,11 +7,9 @@
     font-style: normal;
     font-size: 1.2rem;
 }
-
 .navbar .container-fluid {
     justify-content: space-between;
 }
-
 .navbar-nav {
     display: flex;
     align-items: center;
@@ -20,46 +18,38 @@
     flex: 1;
     justify-content: space-around;
 }
-
 .navbarimg {
     width: 72px;
     max-width: 9%;
     height: auto;
     border-radius: 100%;
 }
-
 .nav-link {
     color: #fff !important;
     font-weight: 500;
     letter-spacing: 0.02em;
 }
-
 .nav-link:hover {
     text-decoration: none;
 }
-
 .nav-link.active {
     font-weight: 700;
     text-decoration: underline;
 }
-
 .navbar-toggler {
     border: 2px solid #fff !important;
 }
-
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
-
 .navbar {
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 1000;
 }
-
 .navbar-toggler {
     z-index: 1100;
 }
-
 /*end of navbar*/
 
 /*home page*/
@@ -72,11 +62,12 @@ body.indexhtmlbody {
     min-height: 100vh;
 }
 .homepagebox {
-/* make it centered and styled */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* make it centered under the sticky navbar without changing its size */
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 4rem auto 2rem auto;
     background-color: #D9AE5E80;
     border: 10px solid #1F3F1E;
     border-radius: 45px;
@@ -132,14 +123,6 @@ body.indexhtmlbody {
     transform: translateY(0);
     box-shadow: 0 8px 16px rgba(31, 63, 30, 0.16);
 }
-
-
-
-
-
-
-
-
 /*end of home page*/
 
 
@@ -229,7 +212,20 @@ body.contactsusbody main {
     border-radius: 20px;
 }
 
-/* this was he vs code ai - it ensures the contact box sits under the navbar on small screens */
+/* this was the vs code ai - it ensures the contact box sits under the navbar on small screens */
 @media (min-width: 0) {
     .contactinfobox { margin-top: 0.6rem; }
 }
+/*contact us page start */
+.ena, .eachsm {
+    background-color: #D9AE5E;
+    border: 1px solid #1F3F1E;
+    border-radius: 10px;
+    color: #1F3F1E !important;
+    font-size: 40px;
+    font-family: "Playfair Display", serif;
+    justify-content: center;
+    padding: 10px;
+    margin: 5px;
+}
+/*contact us page end*/
