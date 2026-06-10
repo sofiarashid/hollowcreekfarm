@@ -149,7 +149,7 @@ body.indexhtmlbody {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     padding: 2.5rem 2rem;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #FFF6E599;
 }
 
 
@@ -169,6 +169,7 @@ body.aboutusbody {
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr;
+    font-size: 120%;
 }
 
 main {
@@ -197,8 +198,10 @@ body.contactsusbody main {
     padding-top: 0;
 }
 
-.col-md-9 {
-    margin: 0 auto;
+body.contactsusbody main .col-md-9 {
+    margin: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .contactinfobox {
@@ -237,24 +240,24 @@ body.contactsusbody main {
     border-radius: 10px;
 }
 .contactusimg {
-    position: relative;
-    left: 20px !important;
-    max-width: calc(100% - 20px) !important;
+    margin-left: 1.5rem;
+    max-width: calc(100% - 1.5rem);
 }
 .ena {
     background-color: #D9AE5E;
     border: 1px solid #1F3F1E;
-    border-radius: 10px;
+    border-radius: 12px;
     color: #1F3F1E !important;
-    font-size: 0.9rem;
+    font-size: 1.05rem;
     font-family: "Playfair Display", serif;
-    padding: 10px;
+    padding: 14px 18px;
     margin: 0;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 45px;
+    height: 90px;
+    width: 100%;
     white-space: normal;
     word-wrap: break-word;
 }
@@ -263,17 +266,13 @@ body.contactsusbody main {
     background-color: #D9AE5E;
     border: 1px solid #1F3F1E;
     border-radius: 10px;
-    color: #1F3F1E !important;
-    font-size: 1.8rem;
-    font-family: "Playfair Display", serif;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 12px;
     margin: 0;
     aspect-ratio: 1;
-    width: 70px;
-    height: 70px;
-    min-width: 70px;
+    width: 90px;
+    height: 90px;
 }
 /*contact us page end*/
