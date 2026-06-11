@@ -72,8 +72,7 @@ body.indexhtmlbody {
     border: 10px solid #1F3F1E;
     border-radius: 45px;
     padding: 5rem 3rem;
-    width: min(95%, 880px);
-    min-height: 620px;
+    width: 80%;
 /* text centered and styled */
     display: flex;
     flex-direction: column;
@@ -251,10 +250,69 @@ body.contactsusbody main .col-md-9 {
     min-height: 300px;
     border-radius: 10px;
 }
+
 .contactusimg {
     margin-left: 1.5rem;
     max-width: calc(100% - 1.5rem);
 }
+
+.contacthoursbox {
+    background-color: #FFF6E5;
+    border: 1px solid #1F3F1E;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 0 6px;
+    width: calc(100% - 12px);
+    height: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(31, 63, 30, 0.12);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-hours-title {
+    color: #1F3F1E;
+    font-family: "Playfair Display", serif;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+.contact-hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #1F3F1E;
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+}
+
+.contact-hours-table th,
+.contact-hours-table td {
+    border: 1px solid #1F3F1E;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.contact-hours-table th {
+    background-color: #D9AE5E;
+    font-weight: 700;
+}
+
+.contact-hours-table tr:nth-child(even) td {
+    background-color: #F7EBCB;
+}
+
+.contact-hero-row {
+    margin: 0 6px;
+}
+
+.contact-hero-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .ena {
     background-color: #D9AE5E;
     border: 1px solid #1F3F1E;
@@ -274,6 +332,11 @@ body.contactsusbody main .col-md-9 {
     word-wrap: break-word;
 }
 
+.enaall3 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .eachsm {
     background-color: #D9AE5E;
     border: 1px solid #1F3F1E;
@@ -286,5 +349,18 @@ body.contactsusbody main .col-md-9 {
     aspect-ratio: 1;
     width: 90px;
     height: 90px;
+}
+
+.eachsm a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eachsm img {
+    height: 100px;
+    width: auto;
+    padding: 5px;
+    margin: 0 auto;
 }
 /*contact us page end*/
