@@ -142,7 +142,6 @@ body.indexhtmlbody {
 }
 .aboutus{
     width: 75%;
-    max-width: 900px;
     margin: 0 auto;
     border-radius: 120px;
     border: 10px solid #1F3F1E;
@@ -151,6 +150,7 @@ body.indexhtmlbody {
     text-align: center;
     background-color: #D9AE5E99;
     font-family: "Lora SemiBold", serif;
+    font-size: 2rem;
 }
 
 
@@ -193,6 +193,23 @@ main {
 .aboutTheFarm {
     text-decoration: underline;
 }
+/*start of shop */
+body.shopbody {
+      background-image: url("Client Files/Placeholder Images/photo-farm-store-interior-jars-produce.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+@media (max-width: 900px) and (orientation: portrait) {
+    body.shopbody {
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+}
+
 
 /* contact us page */
 body.contactsusbody {
@@ -332,15 +349,7 @@ body.contactsusbody main .col-md-9 {
     word-wrap: break-word;
 }
 
-.enaall3 {
-    padding-left: 0;
-    padding-right: 0;
-}
-
 .eachsm {
-    background-color: #D9AE5E;
-    border: 1px solid #1F3F1E;
-    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
