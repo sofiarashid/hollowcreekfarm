@@ -184,8 +184,8 @@ main {
 .bottomfooterimg {
     display: block;
     margin-top: auto;
+    display: flex;
     width: 100%;
-    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 1.5rem;
@@ -337,14 +337,14 @@ body.contactsusbody main .col-md-9 {
     color: #1F3F1E !important;
     font-size: 1.05rem;
     font-family: "Playfair Display", serif;
-    padding: 14px 18px;
-    margin: 0;
+    padding: 15px;
+    margin: 15px auto;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 90px;
-    width: 100%;
+    width: calc(100% - 30px);
     white-space: normal;
     word-wrap: break-word;
 }
@@ -354,10 +354,10 @@ body.contactsusbody main .col-md-9 {
     justify-content: center;
     align-items: center;
     padding: 12px;
-    margin: 0;
+    margin: 0 auto;
     aspect-ratio: 1;
-    width: 90px;
-    height: 90px;
+    width: 130px;
+    height: 130px;
 }
 
 .eachsm a {
@@ -367,9 +367,118 @@ body.contactsusbody main .col-md-9 {
 }
 
 .eachsm img {
-    height: 100px;
+    height: 125px;
     width: auto;
     padding: 5px;
     margin: 0 auto;
 }
+
+.sm-social-row {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.hours-table {
+    width: calc(100% - 40px);
+    border-collapse: collapse;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-family: "Playfair Display", serif;
+    background-color: #fff;
+    display: block;
+}
+
+.hours-table thead {
+    background-color: #1F3F1E;
+    color: #D9AE5E;
+}
+
+.hours-table th {
+    padding: 12px;
+    text-align: center;
+    font-weight: 700;
+    border: 1px solid #1F3F1E;
+    font-size: 1.2rem;
+}
+
+.hours-table td {
+    padding: 12px;
+    border: 1px solid #D9AE5E;
+    color: #1F3F1E;
+    font-size: 1.05rem;
+    text-align: center;
+}
+
+.hours-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.hours-table tbody tr:hover {
+    background-color: #f0f0f0;
+}
 /*contact us page end*/
+
+
+/*seasonal page start */
+body.seasonalbody {
+    background-image: url("Client Files/Website Background Patterns/ChatGPT Image Apr 29, 2026, 10_30_56 PM (7).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.icons {
+    width: auto;
+    max-width: 300px;
+    height: 600px;
+    background-color: white;
+}
+
+.cardsfont {
+    font-family: "Lora SemiBold", serif;
+    font-size: 25px;
+}
+
+.flip-card {
+    background-color: white;
+    height: 700px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+/*seasonal page end */
