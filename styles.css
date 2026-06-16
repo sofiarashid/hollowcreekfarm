@@ -1,3 +1,22 @@
+/*chat gpt helped w this */
+html, body {
+    height: 100%;
+    /* prevent unwanted horizontal scrolling from overflowing children */
+    overflow-x: hidden;
+}
+/* end of ai usage*/
+
+/* make width calculations include padding/border to avoid accidental overflow */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+}
+
 /*navbar*/
 .navbar {
     background: #1F3F1E;
@@ -18,6 +37,7 @@
     flex: 1;
     justify-content: space-around;
 }
+/* Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. */
 .navbarimg {
     width: 72px;
     max-width: 9%;
@@ -39,6 +59,7 @@
 .navbar-toggler {
     border: 2px solid #fff !important;
 }
+/* Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. */
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
@@ -52,9 +73,31 @@
 }
 /*end of navbar*/
 
+/*footer*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #1F3F1E;
+    color: #fff;
+    padding: 0.5rem;
+    font-family: "Playfair Display", serif;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+/*end of footer*/
+
+
 /*home page*/
 body.indexhtmlbody {
     position: relative;
+    /* Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. */
     background-image: url("Client Files/Hero Imgs/hero-apple-orchard-creek-picnic-tables.png");
     background-size: cover;
     background-position: center;
@@ -124,9 +167,9 @@ body.indexhtmlbody {
 }
 /*end of home page*/
 
-
-
-
+body.indexhtmlbody {
+    min-height: 100vh;
+}
 
 /*about page*/
 .about-card {
@@ -163,13 +206,12 @@ body.indexhtmlbody {
 }
 
 body.aboutusbody {
+    /* Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. */
     background-image: url("Client Files/Website Background Patterns/ChatGPT Image Apr 29, 2026, 10_30_56 PM (5).png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
     font-size: 120%;
 }
 
@@ -179,8 +221,9 @@ main {
     align-items: center;
     justify-content: center;
     padding: 2rem 0;
+    width: 100%;
 }
-
+/* Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. */
 .bottomfooterimg {
     display: block;
     margin-top: auto;
@@ -195,7 +238,8 @@ main {
 }
 /*start of shop */
 body.shopbody {
-      background-image: url("Client Files/Placeholder Images/photo-farm-store-interior-jars-produce.png");
+    /* Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. */
+    background-image: url("Client Files/Placeholder Images/photo-farm-store-interior-jars-produce.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -213,12 +257,11 @@ body.shopbody {
 
 /* contact us page */
 body.contactsusbody {
+    /* Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. */
     background-image: url("Client Files/Website Background Patterns/ChatGPT Image Apr 29, 2026, 10_30_57 PM (8).png");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr;
 }
 
 body.contactsusbody main {
@@ -267,7 +310,7 @@ body.contactsusbody main .col-md-9 {
     min-height: 300px;
     border-radius: 10px;
 }
-
+/* Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. */
 .contactusimg {
     margin-left: 1.5rem;
     max-width: calc(100% - 1.5rem);
@@ -322,7 +365,7 @@ body.contactsusbody main .col-md-9 {
 .contact-hero-row {
     margin: 0 6px;
 }
-
+/* Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. */
 .contact-hero-image {
     width: 100%;
     max-width: 100%;
@@ -337,8 +380,8 @@ body.contactsusbody main .col-md-9 {
     color: #1F3F1E !important;
     font-size: 1.05rem;
     font-family: "Playfair Display", serif;
-    padding: 15px;
-    margin: 15px auto;
+    padding: 10px;
+    margin: 5px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -365,7 +408,7 @@ body.contactsusbody main .col-md-9 {
     justify-content: center;
     align-items: center;
 }
-
+/* Image credit: google images, licensed for class use */
 .eachsm img {
     height: 125px;
     width: auto;
@@ -422,19 +465,16 @@ body.contactsusbody main .col-md-9 {
 
 /*seasonal page start */
 body.seasonalbody {
+    /* Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. */
     background-image: url("Client Files/Website Background Patterns/ChatGPT Image Apr 29, 2026, 10_30_56 PM (7).png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 .icons {
-    width: auto;
-    max-width: 300px;
-    height: 600px;
-    background-color: white;
+    width: 310px;
+    height: 400px;
 }
 
 .cardsfont {
@@ -443,9 +483,9 @@ body.seasonalbody {
 }
 
 .flip-card {
-    background-color: white;
-    height: 700px;
-    width: 400px;
+    background-color: #fcf7f0;
+    height: 500px;
+    width: 310px;
     margin: 0 auto;
 }
 
@@ -466,11 +506,11 @@ body.seasonalbody {
 .flip-card-front,
 .flip-card-back {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 310px;
+    height: 500px;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    background-color: white;
+    background-color: #fcf7f0;
     display: flex;
     flex-direction: column;
     justify-content: center;
