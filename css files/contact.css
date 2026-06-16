@@ -1,0 +1,191 @@
+/* contact us page */
+body.contactsusbody {
+    /* Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. */
+    background-image: url("../Client Files/Website Background Patterns/ChatGPT Image Apr 29, 2026, 10_30_57 PM (8).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+body.contactsusbody main {
+    display: block;
+    padding-top: 0;
+}
+
+.contactinfobox {
+    width: 90%;
+    max-width: 900px;
+    color: #FFF6E5;
+    background-color: #1F3F1E;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    text-decoration: underline;
+    font-weight: 700;
+    padding: 1rem 1rem;
+    margin: 0.6rem auto 1rem auto;
+    border-radius: 20px;
+}
+
+.contactform {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 10px;
+}
+
+.contactform iframe {
+    width: 100%;
+    height: auto;
+    min-height: 800px;
+}
+
+.contacthoursbox {
+    background-color: #FFF6E5;
+    border: 1px solid #1F3F1E;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 0 6px;
+    width: calc(100% - 12px);
+    height: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(31, 63, 30, 0.12);
+    display: flex;
+    flex-direction: column;
+}
+
+.ena {
+    background-color: #D9AE5E;
+    border: 1px solid #1F3F1E;
+    border-radius: 12px;
+    color: #1F3F1E !important;
+    font-size: 1.75rem;
+    font-family: "Playfair Display", serif;
+    padding: 10px;
+    margin: 0.5rem auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    width: calc(100% - 2rem);
+    max-width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.contact-hours-table {
+    width: calc(100% - 2rem);
+    max-width: 760px;
+    margin: 1.2rem auto;
+    border-collapse: collapse;
+    background-color: #FFF8EC;
+    border: 1px solid #1F3F1E;
+    border-radius: 18px;
+    box-shadow: 0 10px 18px rgba(31, 63, 30, 0.12);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.contact-hours-table th,
+.contact-hours-table td {
+    padding: 1rem 1.1rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(31, 63, 30, 0.15);
+    color: #1F3F1E;
+    font-family: "Inter", sans-serif;
+    font-size: 0.97rem;
+}
+
+.contact-hours-table th {
+    background-color: #1F3F1E;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.contact-hours-table tr:nth-child(even) {
+    background-color: #FFFAF0;
+}
+
+.contact-hours-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* vs code ai - makes the hours table responsive by stacking the cells vertically on smaller screens */
+@media (max-width: 700px) {
+    .contact-hours-table {
+        width: calc(100% - 2rem);
+        margin: 1rem auto;
+    }
+
+    .contact-hours-table,
+    .contact-hours-table thead,
+    .contact-hours-table tbody,
+    .contact-hours-table th,
+    .contact-hours-table td,
+    .contact-hours-table tr {
+        display: block;
+    }
+
+    .contact-hours-table tr {
+        margin-bottom: 0.9rem;
+    }
+
+    .contact-hours-table th,
+    .contact-hours-table td {
+        padding: 0.9rem 0.95rem;
+    }
+
+    .contact-hours-table th {
+        border-bottom: none;
+    }
+
+    .contact-hours-table td {
+        border-bottom: 1px solid rgba(31, 63, 30, 0.12);
+    }
+}
+
+/* end of vs code ai */
+.eachsm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 0 auto;
+    aspect-ratio: 1;
+    width: 150px;
+    height: 150px;
+}
+
+.eachsm a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image credit: google images, licensed for class use */
+.eachsm img {
+    height: 125px;
+    width: auto;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.sm-social-row {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+/* Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. */
+.contactimgbanner {
+    display: block;
+    margin: 2rem auto 3rem auto;
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 18px rgba(31, 63, 30, 0.12);
+}

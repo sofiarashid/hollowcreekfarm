@@ -1,0 +1,61 @@
+/*seasonal page start */
+body.seasonalbody {
+    /* Image credit: Provided Hollow Creek Farm asset folder. Licensed for class use. */
+    background-image: url("../Client Files/Website Background Patterns/ChatGPT Image Apr 29, 2026, 10_30_56 PM (7).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.icons {
+    width: 310px;
+    height: 400px;
+}
+
+.cardsfont {
+    font-family: "Lora SemiBold", serif;
+    font-size: 25px;
+}
+
+.flip-card {
+    background-color: #fcf7f0;
+    height: 500px;
+    width: 310px;
+    margin: 0 auto;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 310px;
+    height: 500px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #fcf7f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+/*seasonal page end */
