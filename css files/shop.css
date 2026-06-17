@@ -1,0 +1,269 @@
+:root {
+    --farm-green: #123f18;
+    --farm-dark-green: #0b2b10;
+    --farm-cream: #f3e5bd;
+    --farm-gold: #c9a15a;
+    --farm-light-gold: #d8b96c;
+    --page-gray: #202020;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.shopbody {
+    background-color: var(--page-gray);
+    font-family: Georgia, serif;
+}
+
+.shop-navbar {
+    width: 100%;
+    min-height: 108px;
+    margin: 0;
+    background-color: var(--farm-green);
+    padding: 0;
+}
+
+.shop-navbar-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 28px;
+}
+
+.shop-nav-links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.shop-logo {
+    width: 86px;
+    height: 86px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.shop-navbar .nav-link {
+    color: white;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 21px;
+    font-weight: 900;
+    margin-right: 20px;
+    padding: 0;
+    text-shadow: 1px 1px 2px #000000;
+    transition: 0.2s ease;
+}
+
+.shop-navbar .nav-link:hover,
+.shop-navbar .nav-link.active {
+    color: var(--farm-cream);
+    transform: scale(1.05);
+}
+
+.navbar-toggler {
+    background-color: var(--farm-cream);
+    margin: 20px 0;
+}
+
+.shop-page {
+    width: 100%;
+    min-height: 560px;
+    margin: 0;
+    padding: 10px 18px 18px;
+    background-image:
+        linear-gradient(rgba(40, 20, 0, 0.08), rgba(40, 20, 0, 0.08)),
+        url("../Client Files/Placeholder Images/photo-farm-store-interior-jars-produce.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.shop-title-box {
+    width: 590px;
+    max-width: 90%;
+    margin: 0 auto 8px;
+    background-color: rgba(204, 161, 80, 0.9);
+    border: 4px solid var(--farm-green);
+    border-radius: 23px;
+    text-align: center;
+}
+
+.shop-title-box h1 {
+    color: var(--farm-green);
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 1.05;
+    margin: 0;
+}
+
+.shop-filter-box {
+    max-width: 960px;
+    margin: 0 auto 8px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.shop-filter-btn {
+    background-color: var(--farm-cream);
+    color: var(--farm-green);
+    border: 4px solid var(--farm-green);
+    border-radius: 12px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 29px;
+    font-weight: 900;
+    line-height: 1;
+    min-height: 48px;
+    padding: 3px 6px 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
+    transition: 0.2s ease;
+}
+
+.shop-filter-btn:hover,
+.shop-filter-btn.active {
+    background-color: var(--farm-light-gold);
+    color: var(--farm-dark-green);
+    transform: translateY(-2px);
+}
+
+.shop-grid {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.shop-card {
+    display: grid;
+    grid-template-columns: 54% 46%;
+    min-height: 175px;
+    background-color: var(--farm-green);
+    border: 5px solid var(--farm-green);
+    border-radius: 13px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.45);
+}
+
+.shop-img-side {
+    background-color: var(--farm-cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+}
+
+.shop-img-side img {
+    width: 100%;
+    height: 135px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.shop-info-side {
+    color: white;
+    padding: 8px 6px;
+    overflow: hidden;
+}
+
+.shop-info-side h3 {
+    color: white;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 13px;
+    font-weight: 900;
+    text-decoration: underline;
+    line-height: 1.05;
+    margin: 0 0 7px;
+}
+
+.shop-info-side p {
+    font-size: 9px;
+    line-height: 1.05;
+    margin: 0 0 1px;
+    font-weight: bold;
+}
+
+.shop-info-side .shop-answer {
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+
+.shop-footer {
+    width: 100%;
+    min-height: 50px;
+    margin: 0;
+    background-color: var(--farm-green);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-family: Georgia, serif;
+}
+
+.shop-footer p {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .shop-navbar {
+        min-height: auto;
+    }
+
+    .shop-navbar .nav-link {
+        font-size: 18px;
+        margin: 8px 0;
+    }
+
+    .shop-nav-links {
+        align-items: flex-start;
+    }
+
+    .shop-logo {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 8px;
+    }
+
+    .shop-filter-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .shop-title-box h1 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .shop-page {
+        padding: 10px;
+    }
+
+    .shop-filter-box {
+        grid-template-columns: 1fr;
+    }
+
+    .shop-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .shop-title-box h1 {
+        font-size: 38px;
+    }
+
+    .shop-filter-btn {
+        font-size: 25px;
+    }
+
+    .shop-card {
+        min-height: 165px;
+    }
+}
